@@ -1,0 +1,26 @@
+<div class="contenedor-response">
+  <div class="resultados">
+    <div class="respuesta-titulo">
+      <h1>Respuesta</h1>
+    </div>
+    
+    <div class="datos-derecha"> 
+      <p>Status: {{ response?.status }}</p>
+      <p>Tiempo: {{ response?.time | number:'' }} ms</p>
+    </div>
+  </div>
+
+  <div class="contenido-response">
+    <div class="response">
+      <div *ngIf="!response?.error" class="response-display body-style">
+        <h3>Body</h3>
+        <pre>{{ formato(response?.body) }}</pre>
+      </div>
+
+      <div *ngIf="response?.error">
+        <h3>Error</h3>
+        <pre>{{ response?.error }}</pre>
+      </div>
+    </div>
+  </div>
+</div>
