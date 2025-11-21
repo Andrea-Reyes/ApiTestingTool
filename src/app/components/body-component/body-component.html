@@ -1,0 +1,7 @@
+<div class="contenedor-body">
+  <p>Body</p>
+  <div class="body">
+    <div class="numeros-filas" [innerHTML]="numerosFilas"></div>
+    <textarea class="contenido-body" rows="15" [(ngModel)]="body" (input)="actualizarBody(); actualizarNumeros()"></textarea>
+  </div>
+</div>
