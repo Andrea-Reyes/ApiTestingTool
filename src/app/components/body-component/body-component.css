@@ -1,0 +1,39 @@
+.contenedor-body {
+    width: 100%;
+}
+
+.body {
+    display: flex;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+p {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.numeros-filas {
+    color: black;
+    padding: 10px;
+    line-height: 1.4;
+    white-space: pre-wrap;
+    min-width: 40px;
+    font-size: 14px;
+    background-color: #FFF9E0;
+    font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+    border-right: 1px solid #fade6f;
+}
+
+.contenido-body {
+    flex-grow: 1;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    resize: none;
+    padding: 10px;
+    line-height: 1.4;
+    background-color: #FFF9E0;
+    font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+}
