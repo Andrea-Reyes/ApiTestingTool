@@ -1,0 +1,13 @@
+<div class="contenedor-headers">
+  <div class="izquierda">
+    <button (click)="agregarHeader()" class="btn-agregar">Agregar Header</button>
+  </div>
+
+  <div class="derecha">
+    <div *ngFor="let header of headers; let i = index">
+      <input type="text" placeholder="Clave" [(ngModel)]="header.key" (input)="formatoHeaders()"/>
+      <input type="text" placeholder="Valor" [(ngModel)]="header.value" (input)="formatoHeaders()" />
+      <button (click)="eliminarHeader(i)" class="btn-eliminar">X</button>
+    </div>
+  </div>
+</div>
